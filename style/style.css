@@ -1,0 +1,138 @@
+html{
+    transform:scale(0.8)
+}
+
+body{
+    background-image: url(../images/fond2.jpg);
+    background-size: 100%;
+    background-repeat:repeat;
+    color:white;
+    position:relative;
+}
+
+
+.facile{
+    animation: transitionFacileDif 2s;
+    animation-delay: -0.3s;
+}
+
+.normal{
+    animation: transitionNormal 1.5s;
+    animation-delay: -0.3s
+}
+
+.difficile{
+    animation: transitionFacileDif 1s;
+    animation-delay: -0.2s
+}
+
+@keyframes transitionNormal{
+    from{
+        opacity:0;
+        transform: translateX(800px);
+    }
+    to{
+        opacity:1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes transitionFacileDif{
+    from{
+        opacity:0;
+        transform: translateX(-800px)
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+.container {
+    max-width: 1050px;
+    margin : auto;
+    padding : 50px;
+}
+
+.slider img {
+    display:none;
+
+}
+
+img.active {
+    display : block;
+
+}
+
+input{
+    display:block;
+    margin : auto;
+    
+    
+}
+
+h1{
+    text-align: center;
+    text-shadow: 0 0 2px #fff;
+    
+    
+}
+
+.btn{
+    position: relative;
+    margin-top: -250px;
+    font-size:30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 8px;
+    color:white;
+    background-color: rgb(0, 174, 255);
+    border: none;
+    cursor: pointer;
+    padding: 10px 30px;
+    box-shadow: 0px 5px 0px rgb(2, 119, 173);
+    text-align: center;
+
+}
+
+
+.btn:hover{
+    transform: translateZ(3px);
+    box-shadow: 0 6px rgb(2, 119, 173);
+}
+
+.btn:active{
+    transform: translateY(3px);
+    box-shadow: 0 2px rgb(2, 119, 173);
+}
+
+
+.ipt{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position:relative;
+    margin-top: 10px;
+    border-radius:10px;
+}
+
+
+.lt{
+    color: white;
+}
+
+.regle{
+    text-align : center;
+    margin-top: 20px;
+    font-size: 20px;
+    text-shadow: 0 0 10px #fff;
+    animation: transitionRegle 2s;
+}
+
+
+@keyframes transitionRegle{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu du Pendu</title>
+    <link rel="stylesheet" href="../style/style.css"/>
+    <link rel="shortcut icon" href="../images/logo.png"/>
+</head>
+<body>
+    <div class="container">
+        <div class="slider">
+            <img class="active" src="../images/pendu00.png">
+            <img src="../images/pendu01.png">
+            <img src="../images/pendu02.png">
+            <img src="../images/pendu03.png">
+            <img src="../images/pendu04.png">
+            <img src="../images/pendu05.png">
+            <img src="../images/pendu06.png">
+            <img src="../images/pendu07.png">
+            <img src="../images/pendu08.png">
+            <img src="../images/pendu09.png">
+        </div>
+    </div>
+    <input type="button" value="Entrer la réponse" id="boutton" class="btn"/>
+    <div id=regle class="regle">
+        <FONT face="Segoe Print">
+            <div>Mode Difficile : Vous ne savez pas quelle taille fait le mot, vous ne voyez pas la liste des lettres justes et vous devez taper plusieurs fois la même lettre si elle y est plusieurs fois !</div>
+            <div>Mode Normal : Mode classique du Pendu. Trouvez le mot à deviner en 9 essais.</div>
+            <div>Mode Facile : On vous donne un indice sur le mot à deviner !</div>
+        </FONT>
+    </div>
+
+    <div class="facile">
+        <input type="button" value="Mode Facile" id="facile" class="btn">
+    </div>
+    <div class="normal">
+        <input type="button" value="Mode Normal" id="normal" class="btn">
+    </div>
+    <div class="difficile">
+        <input type="button" value="Mode Difficile" id="difficile" class="btn">
+    </div>
+
+    <a href=pendu.html>
+        <input type="button" value="Recommencer" href="pendu.html" id="recommencer" class="btn"/>
+    </a>
+
+    <div class="ipt" id="input">
+        <label>Entre une lettre</label>
+        <input type="text" value="" id="reponse" maxlength="1" size=1>
+    </div>
+    <div class="ipt" id="input2">
+        <label>Entre le mot entier</label>
+        <input type="text" value="" id="reponseEnUnMot">
+    </div>
+
+    <FONT face="Roboto">
+        <h1 id="res"></h1>
+        <h1 id="mot"></h1>
+        <h1 id="lettresTrouvées" id="lt"></h1>
+        <h1 id="indice"></h1>
+    </FONT>
+    <script src="pendu.js"></script>
+</body>
+</html>
